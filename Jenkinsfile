@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent any //agent machine virtuelle machine physique 
 
     triggers {
         pollSCM('* * * * *')
@@ -26,5 +26,11 @@ pipeline {
         //         // Ajoutez les commandes de build ici
         //     }
         // }
+        stage("clear")  //nzid stage bch n9ra variable d'environ
+        {
+            steps {
+                echo "Build ID : ${env.BUILD_ID}"
+            }
+        }
     }
 }
