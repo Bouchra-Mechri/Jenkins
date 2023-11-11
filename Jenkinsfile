@@ -22,15 +22,13 @@ echo "Build du projet"
 }
 }
 
-
-stage('Execute') {
-steps {
-sh "node.js"
-
+//stage('Execute') {
+//steps {
+//sh "node.js"  sh dans un pipeline Jenkins est utilisée pour exécuter des commandes shell ou des scripts shell dans l'environnement de construction. ken ala windows nst3mlou bat 
 // Ajoutez les commandes de build ici
 
-}
-}
+//}
+//}
 
 
  }
